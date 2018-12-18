@@ -1,3 +1,4 @@
+// HEADER
 header {
   height: 100px;
   border-bottom: 1px solid #ccc;
@@ -46,10 +47,17 @@ header {
   }
 }
 
+// SECTION 1
 .intro-item {
   border-radius: 10px;
-  height: 210px;
+  min-height: 210px;
   min-width: 100%;
+  p {
+    line-height: 210px;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+  }
 }
 
 .intro-item.one {
