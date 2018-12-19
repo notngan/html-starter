@@ -50,6 +50,12 @@ header {
   }
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+// BANNER
 #home-banner {
   width: 100vw;
 
@@ -58,7 +64,7 @@ header {
   }
 }
 
-// SECTION INTRO
+// INTRO
 #home-intro {
   .intro-item {
     border-radius: 10px;
@@ -97,11 +103,8 @@ header {
   }
 }
 
+// CONTENT
 #home-content {
-  h1 {
-    text-align: center;
-    margin-bottom: 50px;
-  }
 
   .img_content {
     border-radius: 10px;
@@ -125,5 +128,41 @@ header {
       margin-top: 8px;
       border-color: #d01821;
     }
+  }
+}
+
+//BTN YOUTUBE
+.btn_youtube {
+  background: #d0121b;
+  border-radius: 8px;
+  color: white;
+  padding: 0 60px;
+  border-bottom: 2px solid #8a0c12;
+}
+
+.btn_youtube-md {
+  height: 70px;
+  font-size: $font-size-md;
+  margin: 50px auto;
+  display: block;
+}
+
+// TABLE
+#home-table {
+  table {
+    margin: 0 auto;
+    font-size: $font-size-md;
+  }
+
+  .btn_youtube-sm-wrap {
+    margin: 25px 0;
+    position: relative;
+  }
+
+  .btn_youtube-sm {
+    position: absolute;
+    right: 0;
+    min-height: 40px;
+    font-size: $font-size-sm;
   }
 }

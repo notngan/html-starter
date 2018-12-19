@@ -4,8 +4,9 @@
 
   td,
   th {
-    padding: 8px;
-    border: 1px solid $gray-color;
+    width: calc(100% / 3);
+    padding: 25px;
+    border-bottom: 1px solid $dark-color;
   }
 }
 
