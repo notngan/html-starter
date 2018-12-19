@@ -2,10 +2,16 @@
   width: 100%;
   border-collapse: collapse;
 
+  tr {
+    &:hover {
+      background: $gray-color;
+    }
+  }
+
   td,
   th {
     width: calc(100% / 3);
-    padding: 25px;
+    padding: 25px 0;
     border-bottom: 1px solid $dark-color;
   }
 }

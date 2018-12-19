@@ -28,3 +28,12 @@
   top: $vertical;
   transform: translate(-$horizontal, -$vertical);
 }
+
+@mixin background-img($n, $url) {
+  &:nth-child(#{$n}) {
+    background:
+      linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url(../../img/#{$url}.jpg) no-repeat;
+    background-size: cover;
+  }
+}
