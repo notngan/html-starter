@@ -23,9 +23,11 @@ header {
 
     ul {
       display: flex;
+
       li {
         margin-left: 40px;
       }
+
       a {
         text-transform: uppercase;
         text-decoration: none;
@@ -37,6 +39,7 @@ header {
       select {
         border-radius: 0px;
       }
+
       a {
         margin-left: 20px;
         color: #333;
@@ -47,30 +50,80 @@ header {
   }
 }
 
-// SECTION 1
-.intro-item {
-  border-radius: 10px;
-  min-height: 210px;
-  min-width: 100%;
-  p {
-    line-height: 210px;
-    color: white;
-    text-align: center;
-    font-size: 1.8rem;
+#home-banner {
+  width: 100vw;
+
+  img {
+    width: 100%;
   }
 }
 
-.intro-item.one {
-  background: url(../../img/intro-1.jpg) no-repeat;
-  background-size: 100%;
+// SECTION INTRO
+#home-intro {
+  .intro-item {
+    border-radius: 10px;
+    min-height: 210px;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: white;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+  }
+
+  .intro-item.one {
+    background:
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url(../../img/intro-1.jpg) no-repeat;
+    background-size: 100%;
+  }
+
+  .intro-item.two {
+    background:
+      linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+      url(../../img/intro-2.jpg) no-repeat;
+    background-size: 100%;
+  }
+
+  .intro-item.three {
+    background:
+      linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+      url(../../img/intro-3.jpg) no-repeat;
+    background-size: 100%;
+  }
 }
 
-.intro-item.two {
-  background: url(../../img/intro-2.jpg) no-repeat;
-  background-size: 100%;
-}
+#home-content {
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-.intro-item.three {
-  background: url(../../img/intro-3.jpg) no-repeat;
-  background-size: 100%;
+  .img_content {
+    border-radius: 10px;
+    min-height: 150px;
+  }
+
+  .img_content-1 {
+    background: url(../../img/img_content-1.jpg) no-repeat;
+  }
+
+  .img_content-2 {
+    background: url(../../img/img_content-2.jpg) no-repeat;
+  }
+
+  .img_content-3 {
+    background: url(../../img/img_content-3.jpg) no-repeat;
+  }
+
+  article {
+    .btn {
+      margin-top: 8px;
+      border-color: #d01821;
+    }
+  }
 }
