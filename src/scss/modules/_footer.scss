@@ -1,0 +1,41 @@
+footer {
+  background: $dark-color;
+  min-height: 500px;
+  color: $light-color;
+  font-weight: normal;
+  padding: 50px 0;
+
+  table {
+    margin-top: 35px;
+    border-bottom: 1px #aaa solid;
+
+    tr {
+      td {
+        padding: 6px 0;
+
+        &:first-child {
+          padding-right: 40px;
+          width: 30%;
+        }
+      }
+
+      &:last-child {
+        td {
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    margin-top: 25px;
+
+    h4 {
+      float:  left;
+    }
+
+    small {
+      float: right;
+    }
+  }
+}
