@@ -1,4 +1,5 @@
 
+
 h1 {
   text-align: center;
   margin-bottom: 50px;
@@ -33,17 +34,12 @@ h1 {
 
   .intro-item {
     padding: 0;
-    height: 210px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
-
-    img {
-      min-width: 100%;
-    }
 
     a {
       text-decoration: none;
@@ -62,9 +58,9 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
     padding: 0;
-    height: 150px;
+
     img {
-      height: 100%;
+      min-height: 100%;
     }
   }
 
@@ -72,6 +68,7 @@ h1 {
     p {
       font-size: $font-size-md;
     }
+
     a {
       text-decoration: none;
       color: $dark-color;
@@ -133,10 +130,9 @@ h1 {
     border-top-right-radius: 10px;
 
     .place-large-img {
-      width: 100%;
-      height: auto;
       z-index: -1;
       position: absolute;
+      min-height: 100%;
     }
 
     &-item {
@@ -151,21 +147,16 @@ h1 {
       width: 40%;
 
       img {
-        width: 20%;
+        min-width: 20%;
       }
-
-      h2 {
-        font-size: 32px;
-      }
-
     }
 
     &-right {
-      width: 40%;
+      min-width: 40%;
 
       img {
-        height: 100%;
         float: right;
+        max-height: 100%;
       }
     }
   }
@@ -177,17 +168,17 @@ h1 {
 
     a {
       width: calc(100% / 5);
-      height: 140px;
       overflow: hidden;
       position: relative;
       color: $light-color;
       display: flex;
       align-items: center;
       justify-content: center;
+      max-height: 150px;
 
       img {
-        width: 100%;
-        height: auto;
+        min-width: 100%;
+        min-height: 100%;
       }
 
       p {
@@ -214,4 +205,5 @@ h1 {
 #footer-banner {
   margin-top: 50px;
   margin-bottom: 100px;
+
 }
