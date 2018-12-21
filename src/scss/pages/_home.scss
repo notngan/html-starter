@@ -45,7 +45,7 @@ h1 {
 
 
 // CONTENT
-#home-content {
+.list-article {
   .content-img {
     border-radius: 10px;
     overflow: hidden;
@@ -113,7 +113,7 @@ h1 {
   color: white;
   border-bottom: 2px solid darken($red-color, 10%);
 
-  &-md {
+  &-lg {
     padding: 0 60px;
     height: 70px;
     font-size: $font-size-md;
