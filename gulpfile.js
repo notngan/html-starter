@@ -28,10 +28,10 @@ gulp.task('html', () => {
       .pipe(gulp.dest(`${init.destPath}/`))
 });
 
-gulp.task('image', () => {
-  gulp.src(`${init.srcPath}/img/**/*.{gif,jpg,png,svg,ico}`)
-      .pipe(gulp.dest(`${init.destPath}/img`))
-});
+// gulp.task('image', () => {
+//   gulp.src(`${init.srcPath}/img/**/*.{gif,jpg,png,svg,ico}`)
+//       .pipe(gulp.dest(`${init.destPath}/img`))
+// });
 
 gulp.task('css', () => {
   gulp.src(`${init.srcPath}/scss/**/*.scss`)
@@ -87,7 +87,7 @@ gulp.task('clean', () => {
       .pipe(clean())
 });
 
-gulp.task('default', ['html', 'image', 'css', 'js']);
+gulp.task('default', ['html', 'css', 'js']);
 gulp.task('deploy', (callback) => {
   runSequence('clean', 'html', 'image', 'css', 'js', callback);
 });
