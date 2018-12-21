@@ -53,18 +53,10 @@ h1 {
     img {
       vertical-align: bottom;
     }
-
   }
 
-  article {
-
-    &.row {
-      margin-top: 40px;
-    }
-
-    .col-3.col--sm-12 {
-      margin-bottom: 0;
-    }
+  .item-article {
+    margin-top: 40px;
 
     h2 {
       font-size: $font-size-md;
@@ -81,13 +73,14 @@ h1 {
 
     .btn-sm {
       margin-top: 8px;
-      border-color: $red-color;
+      padding: 1px 2px;
+      border: 1px $red-color solid;
       color: $red-color;
+      font-size: $font-size-sm * 0.8;
 
       &:hover {
         color: $dark-color;
         border-color: $dark-color;
-        cursor: pointer;
       }
     }
 
@@ -144,11 +137,11 @@ h1 {
 
 // TABLE
 #home-table {
-  .row {
-    text-align: center;
+  .table-row {
     border-bottom: 1px solid $gray-color;
-    @include mediaquery--sm {
 
+    @include mediaquery--sm {
+      text-align: center;
     }
   }
 }
