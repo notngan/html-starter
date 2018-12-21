@@ -67,17 +67,12 @@ h1 {
       color: $dark-color;
     }
 
-    .btn-sm {
+    .tag {
       margin-top: 8px;
-      padding: 1px 2px;
+      padding: 2px 2px;
       border: 1px $red-color solid;
       color: $red-color;
       font-size: $font-size-sm * 0.8;
-
-      &:hover {
-        color: $dark-color;
-        border-color: $dark-color;
-      }
     }
 
     @include mediaquery--sm {
@@ -102,7 +97,7 @@ h1 {
         display: inline;
       }
 
-      .btn-sm {
+      .tag {
         margin-left: 10px;
         margin-top: 0;
         padding: 4px 2px;

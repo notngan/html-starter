@@ -89,5 +89,5 @@ gulp.task('clean', () => {
 
 gulp.task('default', ['html', 'css', 'js']);
 gulp.task('deploy', (callback) => {
-  runSequence('clean', 'html', 'image', 'css', 'js', callback);
+  runSequence('clean', 'html', 'css', 'js', callback);
 });
